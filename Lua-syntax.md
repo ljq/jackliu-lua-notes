@@ -56,7 +56,7 @@ t = {"a", "b", "c", [4] = "d", [6]="f"}
 ##### Table 操作
 
 | 序号 | 方法 | 用途 |
-|:----:|:----:|:-----------:|
+|:----:|:----|:-----------|
 | 连接 | table.concat (table [, sep [, start [, end]]]) | concat是concatenate(连锁, 连接)的缩写. table.concat()函数列出参数中指定table的数组部分从start位置到end位置的所有元素, 元素间以指定的分隔符(sep)隔开。|
 | 新增 |  table.insert (table, [pos,] value) | 在table的数组部分指定位置(pos)插入值为value的一个元素. pos参数可选, 默认为数组部分末尾.| 
 | ~~maxn~~	| ~~table.maxn (table)~~ | 指定table中所有正数key值中最大的key值. 如果不存在key值为正数的元素, 则返回0。(~~**Lua5.2之后该方法已经不存在了**~~) | 
