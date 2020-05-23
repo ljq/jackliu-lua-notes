@@ -91,7 +91,7 @@ t = {
 ### Operator
 
 ##### calculating signs
-* Relational operator: <> <=> = == **Not equal to** ```~=```
+* Relational operator: ```<``` 、```>```、```<=``` 、```>=``` 、 ```==``` 、 **Not equal to** ```~=```
 * Logical operator: ```and or not```
 * Join operator: (two dots)
 
@@ -156,10 +156,9 @@ end
 
 ##### continue is not officially built and can be implemented in other ways
 
-Reasons for not providing continue:
-Lua-FAQ:
-This is a common complaint. The Lua authors felt that continue was only one of a number of possible new control flow mechanisms (the fact that it cannot work with the scope rules of repeat / untilwas a secondary factor.)
-The Lua author believes that continue is a non-essential feature and is only one of many new control flow mechanisms. Without this feature, the continue keyword will cause some problems in the repeat / until structure.
+Reasons for not providing continue:    
+Lua-FAQ:  
+This is a common complaint. The Lua authors felt that continue was only one of a number of possible new control flow mechanisms (the fact that it cannot work with the scope rules of repeat / untilwas a secondary factor.)  
 
 ##### Several ways to simulate "continue" in lua:
 
