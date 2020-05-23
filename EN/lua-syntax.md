@@ -91,7 +91,7 @@ t = {
 ### Operator
 
 ##### calculating signs
-* Relational operator: ```<``` 、```>```、```<=``` 、```>=``` 、 ```==``` 、 **Not equal to** ```~=```
+* Relational operator: ```<``` 、```>```、```<=``` 、```>=``` 、 ```==``` 、 ```~=```(**Not equal to**)
 * Logical operator: ```and or not```
 * Join operator: (two dots)
 
