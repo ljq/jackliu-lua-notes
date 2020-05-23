@@ -25,7 +25,7 @@
 
 ### 数据类型
 
-###### table （创建不同的数据类型：数组、字典等）
+##### table （创建不同的数据类型：数组、字典等）
 * table 数据结构本身支持多态，定义灵活
 * table 使用关联数组，可以使用人艺类型值作索引，但值不能为nil
 * table 是不固定大小的，你可以哥怒自己需要进行扩展
@@ -34,7 +34,7 @@
 t = {"a", "b", "c", [4] = "d", [6]="f"}
 ``` 
 
-###### Table 操作
+##### Table 操作
 
 | 序号 | 方法 | 用途 |
 |:----:|:----:|:-----------:|
@@ -50,7 +50,7 @@ t = {"a", "b", "c", [4] = "d", [6]="f"}
 
 ### 程序块chunk
 
-###### lua语法-程序块（chunk）
+##### lua语法-程序块（chunk）
 * lua解释器以程序块的方式处理lua代码
 * 每一段可执行的lua代码都可以成为程序块
 * lua程序块指一条或多条合法的可执行语句
@@ -78,12 +78,12 @@ t = {"a", "b", "c", [4] = "d", [6]="f"}
 
 ### 运算符
 
-###### 运算符号
+##### 运算符号
 * 关系运算符: < > <= >= == **不等于** ```～=```
 * 逻辑运算符: ```and or not```
 * 连接运算符: .. (两个点)
 
-###### 运算注意事项
+##### 运算注意事项
 * "0" 和 0 (false,不相等)
 * nil只等于nil本身
 * 逻辑运算符false和nil是假(false),其他为true（包括0也是true）
@@ -106,7 +106,7 @@ t = {"a", "b", "c", [4] = "d", [6]="f"}
 
 ### 循环
 
-###### while
+##### while
 ```
 while(condition)
 do
@@ -114,21 +114,21 @@ do
 end
 ```
 
-###### for
+##### for
 ```
 for var=exp1,exp2,exp3 do  
     --
 end  
 ```
 
-###### repeat
+##### repeat
 ```
 repeat
    statements
 until( condition )
 ```
 
-###### break 和 goto
+##### break 和 goto
 
 goto语法格式：```goto Label```; Label 的格式为```:: Label ::```
 ```
@@ -142,13 +142,13 @@ end
 
 ```
 
-###### continue官方未内置，可通过其他方式模拟
+##### continue官方未内置，可通过其他方式实现
 
 **不提供continue的原因：**
 首先看看在Lua-FAQ中的解释：This is a common complaint. The Lua authors felt that continue was only one of a number of possible new control flow mechanisms (the fact that it cannot work with the scope rules of repeat/until was a secondary factor.)
 lua作者认为continue只是许多新控制流机制中的一种，没有必要性，但实际原因却是lua中没法添加，因为continue关键字在repeat/until结构中会出现一些问题；
 
-###### lua中模拟“continue”的几种方法：
+##### lua中模拟“continue”的几种方法：
 
 * 使用repeat循环包住需要要continue跳过的代码，使用break跳出循环, 需要注意的是，lua中的repeat语句，在循环条件为真的时候退出
 
