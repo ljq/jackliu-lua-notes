@@ -152,7 +152,7 @@ Lua作者认为continue非必要特性且只是许多新控制流机制中的一
 ##### lua中模拟“continue”的几种方法：
 
 * 使用repeat循环包住需要要continue跳过的代码，使用break跳出循环, 需要注意的是，lua中的repeat语句，在循环条件为真的时候退出
-
+```
 for i = 1, 10 do
     repeat
         if i%2 == 0 then
@@ -162,9 +162,10 @@ for i = 1, 10 do
         break
     until true
 end
+```
 
 * 使用while循环包住需要continue跳过的代码， 使用break跳出循环
-
+```
 for i = 1, 10 do
     while true do
         if i%2 == 0 then
@@ -174,9 +175,10 @@ for i = 1, 10 do
         break
     end
 end
+```
 
 * 在lua5.2版本之后，可以使用goto语句来模拟
-
+```
 for i = 1, 10 do
     if i%2 == 0 then
         goto continue
@@ -184,22 +186,5 @@ for i = 1, 10 do
     print(i)
     ::continue::
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
