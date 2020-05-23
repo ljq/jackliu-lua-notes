@@ -15,4 +15,4 @@ Jack Liu's Lua Language Notes .
 [English Documents](https://github.com/iotd/jackliu-lua-notes/tree/master/EN/lua-syntax.md)
 
 #### zh_CN 中文
-[README_CN](https://github.com/iotd/jackliu-lau-notes/tree/master/zh_CN/lua-syntax.md)
+[README_CN](https://github.com/iotd/jackliu-lua-notes/tree/master/zh_CN/lua-syntax.md)
