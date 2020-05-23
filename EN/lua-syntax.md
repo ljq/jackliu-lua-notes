@@ -71,7 +71,7 @@ t = {
 | Remove | table.remove (table [, pos]) | Returns the element of the table array part at pos. The elements after it will be moved forward. The pos parameter is optional, the default is the length of the table, which is deleted from the last element Up. |  
 | Sort | table.sort (table [, comp]) | Sorts the given table in ascending order. |  
 
-s
+
 
 
 
