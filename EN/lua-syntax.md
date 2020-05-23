@@ -148,7 +148,7 @@ local a = 1
 :: label :: print ("--- goto label ---")
 
 a = a + 1
-if a <3 then
+if a < 3 then
     goto label-jump to label label when a is less than 3
 end
 
