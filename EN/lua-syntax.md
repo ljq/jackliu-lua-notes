@@ -64,7 +64,7 @@ t = {
 ##### Table operation
 
 | Operation | Method | Use |  
-|: ----: |: ---- |: ----------- |  
+| :----: | :---- | :----------- |  
 | Connection | table.concat (table [, sep [, start [, end]]]) | concat is the abbreviation of concatenate (chain, connection). The table.concat () function lists the array part of the specified table in the parameter All elements from the position to the end position are separated by the specified separator (sep). |  
 | Added | table.insert (table, [pos,] value) | Insert an element of value at the specified position (pos) in the array part of the table. The pos parameter is optional, and the default is the end of the array part. |  
 | ~~ maxn ~~ | ~~ table.maxn (table) ~~ | Specifies the largest key value among all positive key values ​​in the table. If there is no element with a positive key value, 0 is returned. (This method no longer exists after ~~**Lua5.2**~~) |  
