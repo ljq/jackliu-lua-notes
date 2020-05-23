@@ -144,7 +144,7 @@ end
 
 ##### continue官方未内置，可通过其他方式实现
 
-**不提供continue的原因：**  
+不提供continue的原因：  
 Lua-FAQ：  
 This is a common complaint. The Lua authors felt that continue was only one of a number of possible new control flow mechanisms (the fact that it cannot work with the scope rules of repeat/until was a secondary factor.)  
 Lua作者认为continue非必要特性且只是许多新控制流机制中的一种，未加入此特性，continue关键字在repeat/until结构中会引发出现一些问题。  
