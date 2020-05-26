@@ -200,3 +200,46 @@ for i = 1, 10 do
 end
 ```
 
+### 模块与包
+
+* local 对象，外部模块无法访问
+
+* 环境变量自定义设置  
+
+**文件路径以 ";" 号分隔，最后的 2 个 ";;" 表示新加的路径后面加上原来的默认路径。**
+
+注意事项：  
+Mac OS 系统下，```export LUA_PATH="~/lua/?.lua;;"```在.zshrc中如果在用户home路径下自定义模块路径，
+会被当成～字符，不会解析用户的home路径```no file '~/lua/modules/module.lua'```，故建议应该写为绝对路径。
+```
+#LUA_PATH
+#export LUA_PATH="~/lua/?.lua;;"
+export LUA_PATH="/Users/iotd/lua/?.lua;;"
+
+```
+
+```
+-- 文件名为 module.lua
+-- 定义一个名为 module 的模块
+module = {}
+ 
+-- 定义一个常量
+module.constant = "这是一个常量"
+ 
+-- 定义一个函数
+function module.func1()
+    io.write("这是一个公有函数！\n")
+end
+ 
+ -- 外部无法访问到
+local function func2()
+    print("这是一个私有函数！")
+end
+ 
+function module.func3()
+    func2()
+end
+ 
+return module
+```
+
